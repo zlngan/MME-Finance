@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="MME-Finance: A Multimodal Finance Benchmark for Expert-level Understanding and Reasoning">
+    <meta name="keywords" content="text-to-image generation, Large Language Models, scene synthesis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MMFinBench</title> 
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+    <link rel="icon" href="./static/images/logo.png">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <link rel="stylesheet" href="./static/css/index-gradio.css">
+    <link rel="stylesheet" href="./static/css/live_theme.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <!-- <script src="./static/js/index.js"></script> -->
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title"
+                        style="display: flex;flex-direction: row;align-items: center;justify-content: center;margin-bottom: 5px;"><img
+                            src="./static/images/logo.png" width="60" height="60" style="margin-right: 10px;">MME-Finance:</h1>
+                    <h1 class="title is-2 publication-title">A Multimodal Finance Benchmark for Expert-level Understanding and Reasoning</h1>
+                    <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Ziliang Gan<sup>1</sup> </a>,</span>
+                        <span class="author-block">
+              Yu Lu<sup>1</sup></a>, Dong Zhang<sup>1</sup>, Haohan Li<sup>1</sup>,  Che Liu<sup>2</sup>, Jian Liu<sup>3</sup>, 
+              Haipang Wu<sup>1</sup> </a>,
+            </span>
+            <br>
+            <span class="author-block">
+                Chaoyou Fu<sup>4</sup>, Zenglin Xu<sup>5</sup>, Rongjunchen Zhang<sup>1</sup>, Yong Dai<sup>1</sup>
+            </span>
+                    </div>
+                    <div class="is-size-5 publication-authors" style="margin-top: 10px;">
+                        <span class="author-block">
+                            <sup>1</sup>Hithink Research, <sup>2</sup>Imperical College London, <sup>3</sup>Beihang University, <sup>4</sup>Nanjing University, <sup>4</sup>Fudan University 
+                        </span>
+
+                    </div>
+
+    </div>
+</section>
+
+<div class="column has-text-centered">
+    <div class="publication-links">
+      <!-- PDF Link. -->
+      <span class="link-block"> <a href=""
+           class="external-link button is-normal is-rounded is-dark"> <span class="icon"> <i class="ai ai-arxiv"></i> </span> <span>arXiv</span> </a> </span>
+      <!-- Code Link. -->
+      <span class="link-block"> <a href="https://github.com/hithink-ai/MME-Finance"
+           class="external-link button is-normal is-rounded is-dark"> <span class="icon"> <i class="fab fa-github"></i> </span> <span>Code</span> </a> </span>
+      <!-- HuggingFace Link. -->
+      <span class="link-block"> <a href="https://huggingface.co/datasets/hithink-ai/MME-Finance"
+           class="external-link button is-normal is-rounded is-dark"><span class="icon">🤗</span><span>Space</span> </a></span>
+    </div>
+      </div>
+
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-2">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        In recent years, multimodal benchmarks for general domains have guided the rapid development of multimodal models on general tasks. However, the financial field has its peculiarities. It features unique graphical images (e.g., candlestick charts, technical indicator charts) and possesses a wealth of specialized financial knowledge (e.g., futures, turnover rate). Therefore, benchmarks from general fields often fail to measure the performance of multimodal models in the financial domain, and thus cannot effectively guide the rapid development of large financial models. To promote the development of large financial multimodal models, we propose MME-Finance, an open-ended and practical usage-oriented Visual Question Answering (VQA) benchmark. The characteristics of our benchmark are finance and expertise, which include constructing charts that reflect the actual usage needs of users (e.g., computer screenshots and mobile photography), creating questions according to the preferences in financial domain inquiries, and annotating questions by experts with 10+ years of experience in the financial industry.
+Additionally, we have developed a custom-designed financial evaluation system in which visual information is first introduced in the multi-modal evaluation process. Extensive experimental evaluations of 19 mainstream MLLMs are conducted to test their perception, reasoning, and cognition capabilities. The results indicate that models that perform well on general benchmarks cannot do well on MME-Finance; for instance, the top-performing open-source and closed-source models obtain 65.69 (Qwen2VL-72B) and 63.18 (GPT-4o), respectively. Their performance is particularly poor in categories most relevant to finance, such as candlestick charts and technical indicator charts. Therefore, we hope to open-source our benchmark to foster the development of multimodal models in the financial domain.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-2">Overview</h2>
+            <br>
+        </div>
+        <!-- Architecture -->
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h4 class="title is-3">•Data Collection </h4>
+                <div class="content has-text-justified">
+                    <p>
+                        This is the data collection pipeline of MME-Finance. 
+                        First, we identify relevant financial pages on a computer and use screenshot tools to capture the appropriate areas. Then, we use mobile devices to photograph the corresponding sections. 
+                        Next, we search for the same content on mobile applications and capture screenshots using smartphones. 
+                        The inclusion of diverse image styles, including computer screenshots, mobile photographs, and vertical and horizontal mobile screenshots, is intended to simulate real-world application scenarios. 
+                        MME-Finance categorizes the collected images into six types: candlestick charts, technical indicator charts, statistical charts, tables, documents, and mixed charts. 
+
+                    </p>
+                    <img class="columns is-centered has-text-centered" src="./static/images/Collection.png" alt="Teaser" width="95%"
+                         style="margin:0 auto">
+                    <br>
+                    <figcaption>
+                        <p style="text-align: center; color: #1d3f9c;">
+                        </p>
+                    </figcaption>
+                </div>
+                <h4 class="title is-3">•QA Generation</h4>
+                    <p>
+                        This is the annotation pipeline on MME-Finance. GPT-4o is utilized to generate questions and corresponding answers. 
+                        These results are reviewd by experts to make sure the quality of MME-Finance.
+                    </p>
+                    <div class="content has-text-justified">
+                    <img class="columns is-centered has-text-centered" src="./static/images/Annotation.png" alt="Teaser" width="95%"
+                        style="margin:0 auto">
+                    <br>
+                    <figcaption>
+                        <p style="text-align: center; color: #061E61;">
+                        </p>
+                    </figcaption>
+                    </div>
+                <h4 class="title is-3">•Evaluation Method </h4>
+                    <div class="content has-text-justified">
+                        <p>
+                            This is the evaluation pipeline on MME-Finance. 
+                            MME-Finance designs a comprehensive evaluation process tailored to the characteristics of our benchmark. 
+                            During the inference phase, prompts are crafted to constrain the output formats of MLLMs, thereby facilitating a more standardized evaluation. 
+                            LLM-based evaluation system is used to score the performance of various models. 
+                            The scoring system is divided into six levels, ranging from 0 (completely incorrect) to 5 (fully correct), with the overall score being the average across all samples. 
+                        </p>
+                    <img class="columns is-centered has-text-centered" src="./static/images/infer_eval.png" alt="Teaser" width="95%"
+                        style="margin:0 auto">
+                    <br>
+                    <figcaption>
+                        <p style="text-align: center; color: #061E61;">
+                        </p>
+                    </figcaption>
+                    </div>
+                <h4 class="title is-3">•Statistics </h4>
+                    <div class="content has-text-justified">
+                        <p>
+                            This is the statistics results of MME-Finance. MME-Finance contains 1,171 image-question-answer pairs spanning 11 distinct tasks, categorized into 3 ability levels. 
+                            The number of samples per task varies from 18 to 229, with the Spatial Awareness task containing the most and Reason Explanatio the fewest. 
+                            The image below illustrates the distribution of the 6 image types and 4 image styles. The statistical charts account for the main proportion, while mixed charts are the least.
+                            Computer screenshots and mobile photographs constitute similar proportions, representing 47.3% and 40.5% of the total, respectively. 
+                            Vertical and horizontal mobile screenshots contain approximately sample sizes.
+                        </p>
+                    <img class="columns is-centered has-text-centered" src="./static/images/statistics.png" alt="Teaser" width="95%"
+                         style="margin:0 auto">
+                    <br>
+                    <figcaption>
+                        <p style="text-align: center; color: #061E61;">
+                        </p>
+                    </figcaption>
+                    </div>
+            </div>
+        </div>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-2">Results on MME-Finance</h2>
+            <br>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-full-width"> 
+                <div class="content has-text-justified">
+                    <p>
+                        The table below shows the results of various MLLMs on MME-Finance from the view of each task. 
+                        Performance across the MLLMs varies significantly, with many models exhibiting low accuracy, 
+                        highlighting the challenging nature of the MME-Finance benchmark. Among the evaluated models, 
+                        QwenVL2-72B achieves the best overall performance with 65.69% accuracy, excelling in most tasks, 
+                        particularly OCR and ANC. Proprietary MLLM, i.e., GPT-4o, ranks second overall but surpasses QwenVL2-72B in all cognition-related tasks. 
+                        This suggests that GPT-4o’s superior language processing capabilities give it an advantage in tasks requiring complex reasoning. 
+                        Additionally, our findings support the observation from MMBench that the size of the language model has a significant impact on performance. 
+                        For instance, larger models in the same series, such as LLaVA-NEXT-13B compared to LLaVA-NEXT-7B, consistently demonstrate better results.
+                    </p>
+                    <img class="columns is-centered has-text-centered" src="./static/images/results.png" alt="Teaser" width="95%"
+                         style="margin:0 auto">
+                    <br>
+
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-2">Demonstrations</h2>
+            <br>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-full-width"> 
+                <h3 class="title is-4">•Image Caption</h3>
+                    <div class="content has-text-justified">
+                    <img class="columns is-centered has-text-centered" src="./static/images/image_caption.png" alt="Teaser" width="95%"
+                         style="margin:0 auto">
+                    <br>
+                    </div>
+                <h3 class="title is-4">• Spatial Awareness</h3>
+                    <div class="content has-text-justified">
+                    <img class="columns is-centered has-text-centered" src="./static/images/spatial_awareness.png" alt="Teaser" width="95%"
+                         style="margin:0 auto">
+                    <br>
+                    </div>
+                    </div>
